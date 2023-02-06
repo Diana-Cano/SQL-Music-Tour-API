@@ -1,0 +1,22 @@
+'use strict';
+/** @type {import('sequelize-cli').Migration} */
+module.exports = {
+  async up(queryInterface, Sequelize) {
+    await queryInterface.createTable('stage', {
+     
+      stage_id: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        autoIncrement: true,
+        primaryKey: true,
+      },
+      stage_name: {
+        type: Sequelize.STRING
+      },
+      
+    });
+  },
+  async down(queryInterface, Sequelize) {
+    await queryInterface.dropTable('stage');
+  }
+};
