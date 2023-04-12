@@ -11,7 +11,7 @@ module.exports = {
       },
       stage_id: {
         type: Sequelize.SMALLINT,
-        aloowNull:false,
+        allowNull:false,
       },
       event_id: {
         type: Sequelize.SMALLINT,

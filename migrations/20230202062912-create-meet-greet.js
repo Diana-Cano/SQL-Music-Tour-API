@@ -5,22 +5,22 @@ module.exports = {
     await queryInterface.createTable('meet_greet', {
       event_id: {
         type: Sequelize.INTEGER,
-        allowNull:false
+        allowNull: false
       },
       band_id: {
         type: Sequelize.INTEGER,
-        allowNull:false,
+        allowNull: false
       },
       meet_start_time: {
         type: Sequelize.DATE,
-        allowNull:False
+        allowNull: false
 
       },
       meet_greet_id: {
         type: Sequelize.INTEGER,
-        allowNull:false,
+        allowNull: false,
         autoIncrement: true,
-        primaryKey: true,
+        primaryKey: true
       },
     
     });
